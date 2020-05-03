@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.assignment.LightningTalks.LightningTalksApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.901 s <<< FAILURE! - in com.assignment.LightningTalks.LightningTalksApplicationTests
+contextLoads(com.assignment.LightningTalks.LightningTalksApplicationTests)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'topicController': Unsatisfied dependency expressed through field 'topicService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'topicService': Unsatisfied dependency expressed through field 'topicRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.assignment.LightningTalks.dao.TopicRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'topicService': Unsatisfied dependency expressed through field 'topicRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.assignment.LightningTalks.dao.TopicRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.assignment.LightningTalks.dao.TopicRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+

@@ -1,0 +1,5 @@
+com\assignment\LightningTalks\LightningTalksApplication.class
+com\assignment\LightningTalks\controller\TopicController.class
+com\assignment\LightningTalks\model\Topic.class
+com\assignment\LightningTalks\dao\TopicRepository.class
+com\assignment\LightningTalks\service\TopicService.class

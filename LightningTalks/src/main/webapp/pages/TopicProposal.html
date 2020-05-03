@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta charset="ISO-8859-1"> -->
+<meta charset="utf-8" />
+<title>Topic Proposal</title>
+<link href = "./css/styles.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+<div class="panel-heading">
+<h1>Topic Submission</h1>
+</div>
+<form action = "saveTopic" method="post">
+<div class="form-group">
+<label>Topic</label>
+<input type = "text" name = "topicName" maxLength = "80" class="form-control" required>
+</div>
+<br/><br/>
+<div class="form-group">
+<label>Topic Description</label>
+<textarea class="form-control" name="topicDescription" id="topicDescription" class="form-control" rows="6" required></textarea>
+</div>
+<br/><br/>
+<div class="form-group">
+<label>Email</label>
+<input type = "text" name = "emailAddress" maxLength = "255" class="form-control" required>
+</div>
+<br/><br/><br/><br/>
+<div>
+<input type = "submit" label = "Save">
+</div>
+</form>
+<span text="${errors}" ></span>
+</body>
+</html>

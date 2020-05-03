@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>View Topics</title>
+</head>
+<body>
+<!--<table style="width:100%">
+   <tr>
+    <th>Topic Name</th>
+    <th>Topic Description</th>
+    <th>Email Address</th>
+    <th>Email Address</th>
+    <th>Submission Date</th>
+    <th>Lightning Talk Date</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<div class="container">
+	<div th:if="${not #lists.isEmpty(ListOfTopics)}">
+	<h2>List Of Topics</h2>
+	<table class="table table-striped">
+	<tr>
+	    <th>Topic Name</th>
+	    <th>Topic Description</th>
+	    <th>Email Address</th>
+	    <th>Submission Date</th>
+	    <th>Lightning Talk Date</th>
+    </tr>
+    <tr th:each="topic : ${ListOfTopics}">
+    <td th:text="${topic.topicName}"></td>
+    <td th:text="${topic.topicDescription}"></td>
+    <td th:text="${topic.emailAddress}"></td>
+    <td th:text="${topic.submissionDate}"></td>
+    <td th:text="${topic.lightningTalkDate}"></td>
+    </tr>
+    </table>
+	</div> 
+</div>-->
+<h2>${ListOfTopics}</h2>
+</body>
+</html>
